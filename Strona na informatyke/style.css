@@ -1,0 +1,119 @@
+
+body{
+
+    /* wysokosc oraz szerokosc obiektu w tym przypadku "body" */
+    width: 100vw;
+    height: 100vh;
+
+    /* Dodawanie Obarazu na tlo strony*/
+    background-image: url(img/tło.jpg);
+
+    /* Zapobieganie klonowania sie obrazkom na stronie (przez brak miejsca) */
+    background-repeat: no-repeat;
+    
+    /* Przykleja do ekranu background*/
+    background-attachment: fixed;
+
+    /* Brak scrola poziomego na stronie*/
+    overflow-x: hidden;
+    color: white;
+    font-family: sans-serif;
+}
+
+/* twozenie klasy (class) taki znacznik do html nadajacy danemu elementowi odpowiedni wygload */
+/* aby stwozyc klase piszemy ."nazwa"{} */
+.nav{
+    /* Szerokosc obektu z klasa nav */
+    width: 80%;
+
+    /* Automatyczne dopasowywanie sie obiektow w obiekcie z klasa nav */
+    display: flex;
+    
+    /* Automatyczne centrowanie obeikow z klasa nav (dziala tylko po display flex) */
+    align-items: center;
+    justify-content: center;
+
+    /* Ustawianie marginesu na 0 + wysrodkowanie */
+    margin: 0 auto;
+
+    /* Kolor czciaki w obiekcie z klasa div */
+    color: white;
+
+    /* Pociemnianie koloru tla obiektu z klasa div */
+    background-color: rgba(0, 0, 0, 0.6);
+
+    /* Zaaokraglanie obiektu z klasa nav*/
+    border-radius: 10px;
+
+}
+
+.nav-tekst{
+    margin-left: 20px;
+    margin-right: 20px;
+    text-decoration: underline;
+    font-size: 25px;
+    
+}
+
+.wrapper{
+    display: flex;
+    width: 90vw;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 10vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 27%;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 30px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+h2{
+    text-align: center;
+
+}
+
+.charmander{
+    margin: 10px 0;
+}
+
+@media (orientation:portrait){
+    .wrapper{
+        flex-direction: column;
+    }
+    .charmander{
+        width: 90%;
+    }
+    h2{
+        font-size: 12px;
+    }
+    p{
+        font-size: 10px;
+    }
+    .container{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    footer{
+        font-size: 9px;
+        font-weight: 600;
+    }
+}
+
+footer{
+    width: 90vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    border-radius: 10px;
+
+}
+.flex{width: 100vw;
+    display: flex;
+    justify-content: center;
+}
